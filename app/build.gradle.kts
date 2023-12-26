@@ -70,6 +70,7 @@ dependencies {
     implementation("androidx.compose.material:material:1.5.4")
     implementation("androidx.activity:activity-compose:1.8.0")
     implementation("androidx.compose.animation:animation-core:1.5.4")
+    implementation("androidx.compose.animation:animation-graphics:1.5.4")
     implementation("androidx.compose.ui:ui:1.5.4")
 
     implementation("io.coil-kt:coil-compose:1.4.0")

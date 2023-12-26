@@ -1,4 +1,4 @@
-package com.rishav.jetpackcomposeanimation.composables
+package com.rishav.jetpackcomposeanimation.animatedvectordrawables
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -87,7 +87,7 @@ fun AnimationLottie(navController: NavController) {
                     navController.popBackStack()
                 }
             ) {
-                Text("Back to Main")
+                Text("Back to Previous Screen")
             }
         }
     }
