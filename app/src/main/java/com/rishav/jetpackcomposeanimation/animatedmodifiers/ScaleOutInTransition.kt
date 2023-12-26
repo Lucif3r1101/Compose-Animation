@@ -1,4 +1,4 @@
-package com.rishav.jetpackcomposeanimation.composables.transition.composables
+package com.rishav.jetpackcomposeanimation.animatedmodifiers
 
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
@@ -10,7 +10,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.animation.*
-import androidx.compose.ui.graphics.graphicsLayer
 import androidx.navigation.NavController
 
 @Composable

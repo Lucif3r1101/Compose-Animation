@@ -1,4 +1,4 @@
-package com.rishav.jetpackcomposeanimation.composables.transition.composables
+package com.rishav.jetpackcomposeanimation.animatedmodifiers
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -13,7 +13,7 @@ import androidx.navigation.NavController
 
 
 @Composable
-fun FadeInOut(navController: NavController) {
+fun SlideFadeInOut(navController: NavController) {
     var isVisible by remember { mutableStateOf(true) }
 
     Column(

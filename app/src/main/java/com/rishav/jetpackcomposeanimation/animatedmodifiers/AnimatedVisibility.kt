@@ -1,4 +1,4 @@
-package com.rishav.jetpackcomposeanimation.composables.transition.composables
+package com.rishav.jetpackcomposeanimation.animatedmodifiers
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.tween
@@ -62,7 +62,7 @@ fun AnimatedVisibility(navController: NavController) {
                 navController.popBackStack()
             }
         ) {
-            Text("Back to Main")
+            Text("Back to Previous Screen")
         }
     }
 }

@@ -15,6 +15,10 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.rishav.jetpackcomposeanimation.animatedmodifiers.AnimatedVisibility
+import com.rishav.jetpackcomposeanimation.animatedmodifiers.ComposablesModifiersScreen
+import com.rishav.jetpackcomposeanimation.animatedmodifiers.ScaleInOut
+import com.rishav.jetpackcomposeanimation.animatedmodifiers.SlideFadeInOut
 import com.rishav.jetpackcomposeanimation.animatedvectordrawables.AnimatedSVGImage
 import com.rishav.jetpackcomposeanimation.animatedvectordrawables.AnimationLottie
 import com.rishav.jetpackcomposeanimation.animatedvectordrawables.SimpleAnimatedVectorDrawable
@@ -59,6 +63,18 @@ fun Navigation(navHostController: NavHostController) {
         }
         composable("animatableSVGs") {
             AnimatedSVGImage(navController = navHostController)
+        }
+        composable("animationsModifiers") {
+            ComposablesModifiersScreen(navController = navHostController)
+        }
+        composable("animationsVisibility") {
+            AnimatedVisibility(navController = navHostController)
+        }
+        composable("animationsSlideInOut") {
+            SlideFadeInOut(navController = navHostController)
+        }
+        composable("animationsScaleInOut") {
+            ScaleInOut(navController = navHostController)
         }
     }
 }
