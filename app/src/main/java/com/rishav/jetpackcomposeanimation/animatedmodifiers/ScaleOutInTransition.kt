@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.animation.*
+import androidx.compose.ui.graphics.Brush
 import androidx.navigation.NavController
 
 @Composable
@@ -17,7 +18,8 @@ fun ScaleInOut(navController: NavController) {
     var isVisible by remember { mutableStateOf(true) }
 
     Column(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier.fillMaxSize()
+            .background(Brush.sweepGradient(listOf(Color.Blue, Color.Green, Color.Gray))),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {

@@ -1,5 +1,6 @@
 package com.rishav.jetpackcomposeanimation
 
+import AnimatedVisibilityExample
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -15,7 +16,6 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.rishav.jetpackcomposeanimation.animatedmodifiers.AnimatedVisibility
 import com.rishav.jetpackcomposeanimation.animatedmodifiers.ComposablesModifiersScreen
 import com.rishav.jetpackcomposeanimation.animatedmodifiers.ScaleInOut
 import com.rishav.jetpackcomposeanimation.animatedmodifiers.SlideFadeInOut
@@ -68,7 +68,7 @@ fun Navigation(navHostController: NavHostController) {
             ComposablesModifiersScreen(navController = navHostController)
         }
         composable("animationsVisibility") {
-            AnimatedVisibility(navController = navHostController)
+            AnimatedVisibilityExample(navController = navHostController)
         }
         composable("animationsSlideInOut") {
             SlideFadeInOut(navController = navHostController)
